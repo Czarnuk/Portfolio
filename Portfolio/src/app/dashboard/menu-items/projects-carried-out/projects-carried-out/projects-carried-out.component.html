@@ -1,0 +1,78 @@
+<ng-template #contentCarsService let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title">Cars Service Online</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+      <p><b>Cel projektu:</b><br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mi nisl, finibus a iaculis ut, eleifend volutpat nisi. Nam consequat vehicula orci eget auctor. Donec a tempor purus, a gravida tellus. Nunc finibus nisl eget enim mollis cursus. Praesent nec lacus sed mauris condimentum gravida. Nullam molestie, magna at consectetur luctus, massa orci mollis lorem, at cursus mi nibh at velit. Praesent ut tristique ex, dignissim ornare sem. 
+    </p>
+    <p><b>Wymagania funkcjonalne:</b><br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mi nisl, finibus a iaculis ut, eleifend volutpat nisi. Nam consequat vehicula orci eget auctor. Donec a tempor purus, a gravida tellus. Nunc finibus nisl eget enim mollis cursus. Praesent nec lacus sed mauris condimentum gravida. Nullam molestie, magna at consectetur luctus, massa orci mollis lorem, at cursus mi nibh at velit. Praesent ut tristique ex, dignissim ornare sem. 
+      </p>
+    <p><b>Wymagania niefunkcjonalne:</b><br>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mi nisl, finibus a iaculis ut, eleifend volutpat nisi. Nam consequat vehicula orci eget auctor. Donec a tempor purus, a gravida tellus. Nunc finibus nisl eget enim mollis cursus. Praesent nec lacus sed mauris condimentum gravida. Nullam molestie, magna at consectetur luctus, massa orci mollis lorem, at cursus mi nibh at velit. Praesent ut tristique ex, dignissim ornare sem. 
+    </p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
+  </div>
+</ng-template>
+<ng-template #contentPortfolio let-c="close" let-d="dismiss">
+    <div class="modal-header">
+      <h4 class="modal-title">Portfolio</h4>
+      <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p><b>Cel projektu:</b><br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mi nisl, finibus a iaculis ut, eleifend volutpat nisi. Nam consequat vehicula orci eget auctor. Donec a tempor purus, a gravida tellus. Nunc finibus nisl eget enim mollis cursus. Praesent nec lacus sed mauris condimentum gravida. Nullam molestie, magna at consectetur luctus, massa orci mollis lorem, at cursus mi nibh at velit. Praesent ut tristique ex, dignissim ornare sem. 
+      </p>
+      <p><b>Wymagania funkcjonalne:</b><br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mi nisl, finibus a iaculis ut, eleifend volutpat nisi. Nam consequat vehicula orci eget auctor. Donec a tempor purus, a gravida tellus. Nunc finibus nisl eget enim mollis cursus. Praesent nec lacus sed mauris condimentum gravida. Nullam molestie, magna at consectetur luctus, massa orci mollis lorem, at cursus mi nibh at velit. Praesent ut tristique ex, dignissim ornare sem. 
+        </p>
+      <p><b>Wymagania niefunkcjonalne:</b><br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mi nisl, finibus a iaculis ut, eleifend volutpat nisi. Nam consequat vehicula orci eget auctor. Donec a tempor purus, a gravida tellus. Nunc finibus nisl eget enim mollis cursus. Praesent nec lacus sed mauris condimentum gravida. Nullam molestie, magna at consectetur luctus, massa orci mollis lorem, at cursus mi nibh at velit. Praesent ut tristique ex, dignissim ornare sem. 
+      </p>
+      </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
+    </div>
+  </ng-template>
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12" style="padding-left: 0px; padding-right: 0px;">
+        <app-home-button></app-home-button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="row">
+          <div class="col-sm-12 projects-carried-out-header">
+            Projekty realizowe
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 projects-carried-out-content">
+            <div class="row">
+              <div class="col-sm-3 projects-carried-out-item cars-service-background">
+                <app-projects-carried-out-item header="Cars Service Online" content="Aplikacja do obsługi serwisu samochodowego" (click)="open(contentCarsService)">
+
+                </app-projects-carried-out-item>
+              </div>
+              <div class="col-sm-3 projects-carried-out-item portfolio-background">
+                <app-projects-carried-out-item header="Portfolio" content="Aplikacja do prezentacji mojej osoby" (click)="open(contentPortfolio)">
+
+                </app-projects-carried-out-item>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

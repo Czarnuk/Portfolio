@@ -1,0 +1,67 @@
+@import 'assets/urls/urls-images.less';
+@import 'assets/styles/colors.less';
+
+body{
+    height: 100%;
+    .background{
+        height: 100%;
+    }
+}
+.container-fluid{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100%;
+    width: 100%;
+    background-image: url(@url-background-image-debian);
+    background-size: cover;
+    background-position: center center;
+    .container{
+        border-radius: 5px;
+        box-shadow: 0 0 30px 10px rgb(105, 151, 212);
+        height: 100%;
+        background: @background-container-color;
+        .home-button-shape{
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        .contact-content{
+            background-color: lightgreen;
+            height: 80%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container-content{
+            height: 80%;
+            overflow-y: auto;
+        }
+    }
+}
+.menu-item{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .menu-item-header{
+        text-align: center;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.901);        
+    }
+    .menu-item-content {
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+     }
+    .menu-item-content > div {
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.750);
+        padding: 10px;
+        margin-bottom: 20px;
+        transition: margin-bottom 2s;
+        width: 100%;
+    }
+}
+.menu-item:hover .menu-item-content > div{
+     margin-bottom: 0;
+}

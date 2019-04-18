@@ -1,0 +1,107 @@
+@import '../../assets/urls/urls-images.less';
+@import '../../assets/styles/colors.less';
+
+.container-fluid{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100%;
+    width: 100%;
+    background-image: url(@url-background-image-debian);
+    background-size: cover;
+    background-position: center center;
+    .container{
+        border-radius: 5px;
+        box-shadow: 0 0 30px 10px rgb(105, 151, 212);
+        height: 100%;
+        background: @background-container-color;
+        .container-content{
+            height: 80%;
+            overflow-y: auto;
+        }
+        .left-content{
+            overflow-y: auto;
+            padding: 20px;
+            .my-foto{
+                padding-bottom: 5px;
+                padding-right: 15px;
+            }
+        }
+        .right-content{
+            height: 100%;
+            overflow-y: auto;
+            padding: 20px;
+        }
+
+        .dashboard-menu-item{
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .projects-done-background{
+            background-image: url(@url-background-image-projects-done);
+            
+        }
+        .career-background{
+            background-image: url(@url-background-image-career);
+        }
+        .projects-implemented-background{
+            background-image: url(@url-background-image-projects-implemented);
+        }
+        .code-review-background{
+            background-image: url(@url-background-image-code-review);
+        }
+        .contact-background{
+            background-image: url(@url-background-image-contact);
+        }
+        .counter-background{
+            margin-bottom: 10px;
+        }
+        .social-media{
+            background: #1d263a;
+            width: 100%;
+            height: 100%;            
+            .footer-content-up{
+                color: white;
+                height: 100%;
+                width: 100%;
+                font-size: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .fb-icon{
+                    margin-right: 20px;
+                }
+                .fb-icon:hover{
+                    background-color: #0060DF;
+                    border: #0060DF;
+                } 
+                .yt-icon{
+                    margin-left: 20px;
+                }
+                .yt-icon:hover{
+                    background-color: #cc181e;
+                    border: #cc181e;
+                }
+            }
+        }
+        .social-media > a {
+            font-size: 1em;
+        }
+        .copyright-content{
+            background: #1d263a;
+            width: 100%;
+            height: 100%;   
+        }
+        .footer-content-copyright{
+            color: white;
+            height: 100%;
+            width: 100%;
+            font-size: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}

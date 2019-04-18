@@ -1,0 +1,78 @@
+<div class="container-fluid">
+  <div class="container">
+      <div class="row container-content">
+          <div class="col-sm-6 left-content">
+              <h1>Kilka słów o mnie...</h1>
+              <img src="/assets/images/my-foto.png" align="left" class="my-foto"/>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae nisi vitae nunc vestibulum efficitur. 
+                Sed maximus ipsum sed dignissim laoreet. Proin rutrum luctus nulla, eget lacinia ligula hendrerit eget. 
+                Ut non facilisis ex. Etiam quis dolor non nibh aliquet euismod ut in urna. Nulla ac diam turpis. <br>
+                In facilisis sapien eu sodales accumsan. Ut imperdiet odio at feugiat vehicula. Pellentesque bibendum lorem eget arcu facilisis sodales. 
+                Pellentesque vestibulum mauris non elit sagittis tempus. Curabitur posuere malesuada tortor quis consectetur. 
+                Maecenas vehicula ac ipsum non consectetur. Integer nunc nisl, vulputate ac lacus ut, pulvinar ultrices dolor. 
+                Morbi elementum eget lorem et sollicitudin. Suspendisse bibendum diam luctus mi ultricies elementum sed vel mi. 
+                Proin mollis urna enim, eu interdum nibh mollis ut.<br>
+                Quisque condimentum mattis imperdiet. Nunc ante leo, hendrerit ut placerat sed, lobortis sit amet dolor. 
+                Nulla sit amet vulputate enim. Donec diam urna, volutpat et mi eu, varius accumsan quam. 
+                Fusce scelerisque augue nec libero vehicula ullamcorper. Quisque dapibus sagittis enim, non vestibulum metus pulvinar nec. 
+                Suspendisse maximus luctus dui eu varius. Integer augue arcu, rutrum ac ipsum eu, dictum mollis nulla. <br>
+                Cras lacus eros, elementum sit amet mauris eget, finibus accumsan odio. Vestibulum leo leo, semper at sem vitae, fringilla fringilla odio. 
+                Sed condimentum magna eleifend nunc tristique, sed dignissim leo porta. Nullam quis condimentum ipsum. 
+            </p>
+          </div>
+          <div class="col-sm-6 right-content">
+              <div class="row" >
+                  <div class="col-sm-6 dashboard-menu-item projects-done-background">
+                    <app-menu-items header="Projekty wykonane" content="Prezentacja projektów komercyjnych oraz niekomercyjnych" (click)="projectsDoneClick()">
+                        
+                    </app-menu-items>
+                  </div>
+                  <div class="col-sm-6 dashboard-menu-item career-background">
+                      <app-menu-items header="Kariera" content="Przebieg mojej kariery w IT" (click)="careerClick()">
+                        
+                      </app-menu-items>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 dashboard-menu-item projects-implemented-background">
+                    <app-menu-items header="Realizowane projekty" content="Projekty którymi zajmuję się w chwili obecnej" (click)="projectsCarriedOutClick()">
+                        
+                    </app-menu-items>
+                </div>
+                <div class="col-sm-6 dashboard-menu-item code-review-background">
+                    <app-menu-items header="Code review" content="Kod zrealizowanych przeze mnie projektów" (click)="codeReviewClick()">
+                        
+                    </app-menu-items>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 dashboard-menu-item contact-background">
+                    <app-menu-items header="Kontakt" content="Dane kontaktowe w celach współpracy" (click)="contactClick()">
+                        
+                    </app-menu-items>
+                </div>
+                <div class="col-sm-6 counter-background">
+                    <app-counter></app-counter>
+                </div>
+            </div>
+          </div>
+      </div>
+      <div class="row" style="height: 10%; ">
+            <div class="col-sm-12 social-media">
+                <div class="footer-content-up">
+                        <a class="btn btn-primary btn-lg fb-icon" href="#" role="button"><span class="fa fa-2x fa-facebook-square"></span></a>  
+                        <a class="btn btn-primary btn-lg yt-icon" href="#" role="button"><span class="fa fa-2x fa-youtube"></span></a>                                               
+                </div>
+            </div>
+      </div>
+      <div class="row" style="height: 10%">
+          <div class="col-sm-12 copyright-content">
+            <div class="footer-content-copyright">
+                    Copyright 2018 by Robert Daraż<br>
+                    All rights reserved
+            </div>  
+          </div>
+      </div>
+  </div>
+</div>
